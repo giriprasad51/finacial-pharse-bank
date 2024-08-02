@@ -14,7 +14,31 @@
 ### Start application
     python app.py
 
+### Fine Turing
+    https://www.kaggle.com/code/giriprasad512/financial-1
 
+    financial-training.ipynb
+
+### Loss function
+    Predict - GroundTruth
+
+    positive - negative    less     100
+    negative - positive    less     100
+    neutral - negative     less      100 client who holds stock will 
+
+    neutral - positive     0         40     no loss just for company growth
+    positive - neutral     0         10	client who buys wont loss 
+    negative - neutral     0         10	client just sell the stock
+
+    positive - positive  more       -10
+    negative - negative  more       -10
+    neutral - neutral    more       -10
+
+    acc1 = (positive-positive + negative-negative + neutral-neutral)/(positive-positive + negative-negative + neutral-neutral + positive-negative + negative-positive + neutral-negative + neutral-positive)
+
+    precision = TP/(TP+FP)
+    Recall = TP/(TP+FN)
+    f1 score = 2*PR/(P+R)
 
 ### Request
 
@@ -38,3 +62,11 @@
             "negative"
         ]
     }
+
+### Screenshots
+<table>
+<tr>
+    <td><img src="Screenshot (68).png" alt="Image 1" width="200"/></td>
+    <td><img src="Screenshot (69).png" alt="Image 2" width="200"/></td>
+</tr>
+</table>
